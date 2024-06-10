@@ -33,5 +33,5 @@ loss = autoencoder.evaluate(x_test, x_test)
 print(f'Test loss: {loss}')
 
 # Save the encoder and decoder models
-encoder.save("encoder.h5")
-decoder.save("decoder.h5")    
+encoder.save("models/encoder.h5")
+decoder.save("models/decoder.h5")    
