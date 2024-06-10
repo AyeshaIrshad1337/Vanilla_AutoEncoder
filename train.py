@@ -29,7 +29,7 @@ autoencoder.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accu
 autoencoder.fit(x_train, x_train, epochs=50, batch_size=256, shuffle=True, validation_data=(x_test, x_test))
 
 # Evaluate the autoencoder
-loss = autoencoder.evaluate(x_test, y_test)
+loss = autoencoder.evaluate(x_test, x_test)
 print(f'Test loss: {loss}')
 
 # Save the encoder and decoder models
